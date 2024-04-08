@@ -28,7 +28,7 @@ class CfgVehicles
 		simulation = "inventoryItem";
 		hiddenSelections[] = {"computer"};
 		hiddenSelectionsTextures[] = {"KZ_RABB_Tweaks\Data\Images\Computer_logos_co.paa"};
-		attachments[] = {"CodeLock","HQ_Nails"};
+		attachments[] = {"CodeLock","HQ_Nails","TerritoryHQ_L1_Upgrade","TerritoryHQ_L2_Upgrade","TerritoryHQ_L3_Upgrade","TerritoryHQ_L4_Upgrade"};
 		class GUIInventoryAttachmentsProps
 		{
 			class Base
@@ -47,9 +47,9 @@ class CfgVehicles
 			};
 			class Upgrades
 			{
-				name = "";
-				description = "";
-				attachmentSlots[] = {};
+				name = "Upgrades";
+				description = "Base will decay without Nails";
+				attachmentSlots[] = {"TerritoryHQ_L1_Upgrade","TerritoryHQ_L2_Upgrade","TerritoryHQ_L3_Upgrade","TerritoryHQ_L4_Upgrade"};
 			};
 		};
 		class DamageSystem
